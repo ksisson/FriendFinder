@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    
+    <style>
+            body{
+                width: 80%;
+                margin: 0 auto;
+            }
+            img{
+                width: 300px;
+                height: 300px;
+            }
+        </style>
 </head>
+
 <body>
+<div class="container">
     <h1>Compatibility Survey</h1>
     <hr>
     <h2>About You</h2>
@@ -21,107 +36,179 @@
             <label for="photoLink">Link to Your Photo</label>
             <input type="text" class="form-control" id="photoLink">
         </div>
-        <h4>Question 1</h4>
+        <h4>Statement 1</h4>
         <div class="form-group">
-            <label for="exampleFormControlSelect1">I enjoy long walks on the beach.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1 (strongly disagree)</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5 (strongly agree)</option>
+            <label for="question1">You like to socialize.</label>
+            <select class="form-control" id="question1">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
             </select>
         </div>
+        <h4>Statement 2</h4>
         <div class="form-group">
-            <label for="exampleFormControlSelect1">I enjoy long walks on the beach.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1 (strongly disagree)</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5 (strongly agree)</option>
+            <label for="question2">Your favorite movie is Titanic.</label>
+            <select class="form-control" id="question2">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
             </select>
         </div>
+        <h4>Statement 3</h4>
         <div class="form-group">
-            <label for="exampleFormControlSelect1">I enjoy long walks on the beach.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1 (strongly disagree)</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5 (strongly agree)</option>
+            <label for="question3">You like to travel.</label>
+            <select class="form-control" id="question3">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
             </select>
         </div>
+        <h4>Statement 4</h4>
         <div class="form-group">
-            <label for="exampleFormControlSelect1">I enjoy long walks on the beach.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1 (strongly disagree)</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5 (strongly agree)</option>
+            <label for="question4">You play a musical instrument.</label>
+            <select class="form-control" id="question4">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
             </select>
         </div>
+        <h4>Statement 5</h4>
         <div class="form-group">
-            <label for="exampleFormControlSelect1">I enjoy long walks on the beach.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1 (strongly disagree)</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5 (strongly agree)</option>
+            <label for="question5">People enjoy your sense of humor.</label>
+            <select class="form-control" id="question5">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
             </select>
         </div>
+        <h4>Statement 6</h4>
         <div class="form-group">
-            <label for="exampleFormControlSelect1">I enjoy long walks on the beach.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1 (strongly disagree)</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5 (strongly agree)</option>
+            <label for="question6">You have a good relationship with your parents.</label>
+            <select class="form-control" id="question6">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
             </select>
         </div>
+        <h4>Statement 7</h4>
         <div class="form-group">
-            <label for="exampleFormControlSelect1">I enjoy long walks on the beach.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1 (strongly disagree)</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5 (strongly agree)</option>
+            <label for="question7">You like playing and watching sports.</label>
+            <select class="form-control" id="question7">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
             </select>
         </div>
+        <h4>Statement 8</h4>
         <div class="form-group">
-            <label for="exampleFormControlSelect1">I enjoy long walks on the beach.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1 (strongly disagree)</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5 (strongly agree)</option>
+            <label for="question8">You enjoy listenting to most types of music.</label>
+            <select class="form-control" id="question8">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
             </select>
         </div>
+        <h4>Statement 9</h4>
         <div class="form-group">
-            <label for="exampleFormControlSelect1">I enjoy long walks on the beach.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1 (strongly disagree)</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5 (strongly agree)</option>
+            <label for="question9">You enjoy long walks on the beach.</label>
+            <select class="form-control" id="question9">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
             </select>
         </div>
+        <h4>Statement 10</h4>
         <div class="form-group">
-            <label for="exampleFormControlSelect1">I enjoy long walks on the beach.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1 (strongly disagree)</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5 (strongly agree)</option>
+            <label for="question10">You enjoy reading</label>
+            <select class="form-control" id="question10">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
             </select>
         </div>
     </form>
+    <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#examplemodal" id="submitbutton">Submit</button>
+    
+  
+    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Best Match</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("#submitbutton").on("click", function(event){
+         
+        var newFriend = {
+        name: $("#nameInput").val().trim(),
+        photo: $("#photoLink").val().trim(),
+        scores: 
+            [
+            parseInt($("#question1").val()),
+            parseInt($("#question2").val()),
+            parseInt($("#question3").val()),
+            parseInt($("#question4").val()),
+            parseInt($("#question5").val()),
+            parseInt($("#question1").val()),
+            parseInt($("#question2").val()),
+            parseInt($("#question3").val()),
+            parseInt($("#question4").val()),
+            parseInt($("#question5").val()),
+            ]
+    }
+    $.post("/api/friends", newFriend, function(data){
+        console.log(data)
+        console.log(newFriend)
+        $(".modal-body").html("<h1>" + data.name + "</h1><br>")
+        $(".modal-body").append($("<img>").attr("src", data.photo))
+
+        $("#exampleModal").modal("toggle")
+    })
+    $("#nameInput").val("")
+    $("#photoLink").val("")
+
+    
+
+    })
+
+    
+        
+    
+    </script>
 </body>
+
 </html>
