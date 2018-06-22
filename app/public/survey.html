@@ -11,21 +11,39 @@
     
     <style>
             body{
+                font-size: 50px;
                 width: 80%;
                 margin: 0 auto;
+                background: rgb(236, 160, 224);
             }
             img{
                 width: 300px;
                 height: 300px;
+            }
+            .red{
+                background: lemonchiffon;
+            }
+            #title{
+                font-size: 70px;
+            }
+            #about{
+                font-size: 60px;
+            }
+            h4{
+                font-size: 55px;
+                color: lemonchiffon;
+            }
+            modal, color{
+                background: rgb(199, 32, 221)
             }
         </style>
 </head>
 
 <body>
 <div class="container">
-    <h1>Compatibility Survey</h1>
+    <h1 id="title">Compatibility Survey</h1>
     <hr>
-    <h2>About You</h2>
+    <h2 id="about">About You</h2>
     
     <form>
         <div class="form-group">
@@ -147,19 +165,19 @@
             </select>
         </div>
     </form>
-    <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#examplemodal" id="submitbutton">Submit</button>
+    <button type="button" class="btn red btn-lg btn-block" data-toggle="modal" data-target="#examplemodal" id="submitbutton">Submit</button>
     
   
     <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                <div class="modal-header">
+            <div class="modal-dialog color" role="document">
+                <div class="modal-content color">
+                <div class="modal-header color">
                     <h5 class="modal-title" id="exampleModalLabel">Best Match</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body color">
                     
                 </div>
                 <div class="modal-footer">
